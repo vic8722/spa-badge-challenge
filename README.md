@@ -3,6 +3,7 @@
 Mr. Bouma is opening up a competitor bootcamp and wants to hire DBC students to make another version of BootBadge.
 
 Here's the BootBadge app: http://bootbadge.herokuapp.com/cohorts/63
+
 TodoMVC has helpful tips for features you may need: https://github.com/tastejs/todomvc/tree/gh-pages/examples/backbone
 
 For a given cohort, each student has a page that contains "badges" with a given catchphrase.
