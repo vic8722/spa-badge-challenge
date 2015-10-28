@@ -3,6 +3,7 @@
 Mr. Bouma is opening up a competitor bootcamp and wants to hire DBC students to make another version of BootBadge.
 
 Here's the BootBadge app: http://bootbadge.herokuapp.com/cohorts/63
+TodoMVC has helpful tips for features you may need: https://github.com/tastejs/todomvc/tree/gh-pages/examples/backbone
 
 For a given cohort, each student has a page that contains "badges" with a given catchphrase.
 Visitors to the site can vote for their favorite badge on each student's page. The badges should appear from most popular at the top to least popular at the bottom.
@@ -25,5 +26,5 @@ Rules
 Considerations
 - Badge sorting. Look up the comparator property on Backbone.Collection
 - Routing. http://myapp.com/#/amadou should show me Amadou's page for example
-- Keeping track of votes. Use a cookie to manage how many times a person has voted (optional stretch)
-- Security. Escape the user's input to avoid XSS attacks (optional stretch)
+- Keeping track of votes. Use a cookie to manage how many times a person has voted
+- Security. Escape the user's input to avoid XSS attacks
