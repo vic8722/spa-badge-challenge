@@ -17,7 +17,7 @@ You can find the main page at spa-badge.html. Click the Sample Page link to see 
 
 Rules
 - Has to be a JavaScript app that utilizes your miniQuery library
-- Uses MVC architecutre. See TodoMVC for inspiration: https://github.com/tastejs/todomvc/tree/gh-pages/examples/vanillajs
+- Uses MVC architecture. See TodoMVC for inspiration: https://github.com/tastejs/todomvc/tree/gh-pages/examples/vanillajs
 - Only XHR requests to the server are allowed except for the initial app load
 - jQuery is banned; any features you want from jQuery must be implemented in your miniQuery
 - Frameworks such as Angular are banned
