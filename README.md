@@ -20,6 +20,7 @@ Rules
 - Uses MVC architecutre. See TodoMVC for inspiration: https://github.com/tastejs/todomvc/tree/gh-pages/examples/vanillajs
 - Only XHR requests to the server are allowed except for the initial app load
 - jQuery is banned; any features you want from jQuery must be implemented in your miniQuery
+- Frameworks such as Angular are banned
 - All page navigation must be done through JS routing (see Considerations section)
 - Data should be persisted on a Rails API backend. Your Rails app should not serve / have any erb or haml files
 - All DOM manipulation should take place on the client
