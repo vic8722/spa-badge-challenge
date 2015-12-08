@@ -4,7 +4,7 @@ Mr. Merriwether is opening up a competitor bootcamp and wants to hire DBC studen
 
 Here's the BootBadge app: http://bootbadge.herokuapp.com/cohorts/63
 
-TodoMVC has helpful tips for features you may need: https://github.com/tastejs/todomvc/tree/gh-pages/examples/vanillajs
+TodoMVC has helpful tips for patterns you could use in your app: https://github.com/tastejs/todomvc/tree/gh-pages/examples/vanillajs
 
 For a given cohort, each student has a page that contains "badges" with a given catchphrase.
 Visitors to the site can vote for their favorite badge on each student's page. The badges should appear from most popular at the top to least popular at the bottom.
