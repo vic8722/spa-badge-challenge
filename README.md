@@ -4,7 +4,7 @@ Mr. Merriwether is opening up a competitor bootcamp and wants to hire DBC studen
 
 Here's the BootBadge app: http://bootbadge.herokuapp.com/cohorts/63
 
-TodoMVC has helpful tips for features you may need: https://github.com/tastejs/todomvc/tree/gh-pages/examples/vanillajs
+TodoMVC has helpful tips for patterns you could use in your app: https://github.com/tastejs/todomvc/tree/gh-pages/examples/vanillajs
 
 For a given cohort, each student has a page that contains "badges" with a given catchphrase.
 Visitors to the site can vote for their favorite badge on each student's page. The badges should appear from most popular at the top to least popular at the bottom.
@@ -17,10 +17,11 @@ You can find the main page at spa-badge.html. Click the Sample Page link to see 
 
 Rules
 - Has to be a JavaScript app that utilizes your miniQuery library
-- Uses MVC architecture. See TodoMVC for inspiration: https://github.com/tastejs/todomvc/tree/gh-pages/examples/vanillajs
-- Only XHR requests to the server are allowed except for the initial app load
+- You can add features to your miniQuery
+- Only XHR (AJAX) requests to the server are allowed except for the initial app load
 - jQuery is banned; any features you want from jQuery must be implemented in your miniQuery
-- Frameworks such as Angular are banned
+- Frameworks and libraries such as Angular and React are banned
+- There's an ban exception for templating libraries such as [Handlebars] (http://tutorialzine.com/2015/01/learn-handlebars-in-10-minutes/)
 - All page navigation must be done through JS routing (see Considerations section)
 - Data should be persisted on a Rails API backend. Your Rails app should not serve / have any erb or haml files
 - All DOM manipulation should take place on the client
@@ -29,4 +30,5 @@ Considerations
 - Badge sorting by vote count.
 - Routing. http://myapp.com/#/walker should show me Walker's page for example. See the pushState API for implementation ideas: https://developer.mozilla.org/en-US/docs/Web/API/History_API
 - Keeping track of votes. Use a cookie to manage how many times a person has voted.
-- Security. Escape the user's input to avoid XSS attacks
+- Security. Escape the user's input to avoid XSS attacks. http://www.veracode.com/security/xss
+- If you'd like to pursue an MVC architecture, see TodoMVC for inspiration: https://github.com/tastejs/todomvc/tree/gh-pages/examples/vanillajs
