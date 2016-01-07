@@ -30,5 +30,4 @@ Considerations
 - Badge sorting by vote count.
 - Routing. http://myapp.com/#walker should show me Walker's page for example. Check out location.hash, window.onhashchange, and the pushState API for implementation ideas.
 - Keeping track of votes. Use a cookie to manage how many times a person has voted.
-- Security. Escape the user's input to avoid XSS attacks. http://www.veracode.com/security/xss
-- If you'd like to pursue an MVC architecture, see TodoMVC for inspiration: https://github.com/tastejs/todomvc/tree/gh-pages/examples/vanillajs
+- Security. Escape the user's input to avoid XSS attacks. http://www.veracode.com/security/xss. Rails might already take care of this for you. Try naming a badge "<script>alert('lol')</script>" and see what happens. 
