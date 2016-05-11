@@ -33,7 +33,7 @@ Rules
 - jQuery is banned; any features you want from jQuery must be implemented in your miniQuery
 - Frameworks and libraries such as Angular and React are banned
 - There's an ban exception for templating libraries such as [Handlebars] (http://tutorialzine.com/2015/01/learn-handlebars-in-10-minutes/)
-- All page navigation must be done through JS routing (see Considerations section)
+- All page navigation must be done through JS routing (see Features section)
 - All DOM manipulation should take place on the client
 
 Features
