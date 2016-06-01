@@ -4,10 +4,6 @@
 
 
 var miniQuery = function (selector, context){
-    console.log("I'm in miniQuery")
-    console.log(selector);
-    console.log("context: ")
-    console.log(context);
       if (selector == null) return;
       if (selector.constructor == String) {
 
@@ -83,7 +79,6 @@ var miniQuery = function (selector, context){
 var $ = miniQuery
 
 miniQuery.Select = function( t, context ) {
-    console.log("I'm in miniQuery.Select")
 
   if (t[0] === "#") {
     return_id = [document.getElementById(t.substr(1,t.length-1))]
@@ -134,35 +129,40 @@ var DOM = (function () {
   })();
 
 var EventDispatcher = (function() {
-  var t = {};
   return {
     on: function(selector, trigga, functionVar){
-      console.log("I got into the on of EventDispatcher")
-      console.log(selector)
-      console.log(trigga)
-      console.log(functionVar)
+      object_selector = miniQuery.Select(selector);
 
-      t[trigga] = functionVar;
-    },
-    trigger: function(selector, trigga) {
-      t[trigga]();
+      for (var i = 0; i < object_selector.length; i++){
+        object_selector[i].addEventListener(trigga,functionVar)
+      }
     }
   }
 })();
 
-miniQuery.ajax = function() {
-  var xhr = new XMLHttpRequest();
-  xhr.open('GET', "/", true);
-  xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
+miniQuery.ajax = function(hash) {
+  console.log(hash.url)
+  console.log("whatever")
+  return new Promise( function(resolve, reject){
+      var xhr = new XMLHttpRequest();
+  xhr.open(hash.method, hash.url);
+  xhr.send();
+  // xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
+  // var responseText
   xhr.onload = function() {
+      console.log("This is:" + this)
+      console.log("xhr is:" + xhr)
       if (xhr.status === 200) {
           alert('User\'s name is ' + xhr.responseText);
+          resolve(this.response)
       }
       else {
           alert('Request failed.  Returned status of ' + xhr.status);
+          reject(this.statusText)
       }
+    // var data = this.response;
   };
-  xhr.send();
+  })
 }
 
 
